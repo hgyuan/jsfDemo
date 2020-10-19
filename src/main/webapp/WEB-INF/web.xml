@@ -14,10 +14,10 @@
     <listener>
         <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
     </listener>
-<!--    <context-param>-->
-<!--        <param-name>javax.faces.DEFAULT_SUFFIX</param-name>-->
-<!--        <param-value>.xhtml</param-value>-->
-<!--    </context-param>-->
+    <!--    <context-param>-->
+    <!--        <param-name>javax.faces.DEFAULT_SUFFIX</param-name>-->
+    <!--        <param-value>.xhtml</param-value>-->
+    <!--    </context-param>-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
@@ -33,16 +33,16 @@
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
-<!--        <init-param>-->
-<!--            <param-name>contextConfigLocation</param-name>-->
-<!--            <param-value>classpath:spring-config.xml</param-value>-->
-<!--        </init-param>-->
+        <!--        <init-param>-->
+        <!--            <param-name>contextConfigLocation</param-name>-->
+        <!--            <param-value>classpath:spring-config.xml</param-value>-->
+        <!--        </init-param>-->
         <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>*.faces</url-pattern>
+        <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
 
 </web-app>

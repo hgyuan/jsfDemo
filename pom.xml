@@ -55,10 +55,28 @@
         <!--            <version>5.2.0.RELEASE</version>-->
         <!--            <type>pom</type>-->
         <!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>javax</groupId>-->
+<!--            <artifactId>javaee-web-api</artifactId>-->
+<!--            <version>8.0.1</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/javax.faces/javax.faces-api -->
+        <!-- JSF -->
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
-            <version>8.0.1</version>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-api</artifactId>
+            <version>2.2.13</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-impl</artifactId>
+            <version>2.2.13</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -74,11 +92,11 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- BUILTIN H2 JDBC DRIVER -->
+        <!-- BUILTIN MYSQL JDBC DRIVER -->
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.4.192</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.11</version>
         </dependency>
         <!-- HIBERNATE AS JPA PROVIDER -->
         <dependency>
@@ -86,6 +104,16 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.2.2.Final</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.sun.faces</groupId>-->
+<!--            <artifactId>jsf-api</artifactId>-->
+<!--            <version>2.1.7</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.sun.faces</groupId>-->
+<!--            <artifactId>jsf-impl</artifactId>-->
+<!--            <version>2.1.7</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

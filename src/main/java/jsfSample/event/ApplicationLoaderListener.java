@@ -20,7 +20,7 @@ import java.util.List;
 @Component
 public class ApplicationLoaderListener implements ApplicationListener<ContextRefreshedEvent> {
 
-    private EmployeeRepository employeeRepository;
+    private final EmployeeRepository employeeRepository;
 
     @Autowired
     public ApplicationLoaderListener(EmployeeRepository employeeRepository) {
@@ -29,12 +29,12 @@ public class ApplicationLoaderListener implements ApplicationListener<ContextRef
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-        ApplicationContext context = event.getApplicationContext();
-        if (context.getParent() != null) {
+//        ApplicationContext context = event.getApplicationContext();
+//        if (context.getParent() != null) {
             long count = employeeRepository.count();
             if (count == 0) {
                 initializeDatabaseWithMockData();
-            }
+//            }
         }
     }
 
